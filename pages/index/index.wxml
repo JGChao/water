@@ -1,0 +1,26 @@
+<!-- banner -->
+<swiper
+  indicator-dots="{{true}}" indicator-active-color="{{indicatoractivecolor}}" autoplay="{{true}}"
+  interval="{{interval}}" circular="{{circular}}" duration="{{500}}">
+ <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- category -->
+  <view class="sort">
+  <view class="sort_w" wx:if="{{category.length}}">
+    <view class="ul">
+      <view class="li" 
+        wx:for="{{category}}" wx:key="index"
+      >
+        <navigator url="/pages/list/list?cid={{item.cid}}" hover-class="none">
+          <image src="{{imghost + item.cthumb}}"></image>
+          <text>{{item.cname}}</text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

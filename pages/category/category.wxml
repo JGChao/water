@@ -1,0 +1,46 @@
+<view class="center">
+  <view class="left">
+    <view class="lf-center">
+      <view>
+        <view class="kuai {{CategoryType == item.cid? 'k1' : ''}}" wx:for="{{categoryLeave}}" wx:key="index"
+              bindtap="chaneCategory" data-cid="{{item.cid}}"
+        >
+          {{item.cname}}
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="right">
+    <view class="rt-center">
+      <view class="top">
+        <!-- banner -->
+        <swiper
+          indicator-dots="{{true}}" indicator-active-color="{{indicatoractivecolor}}" autoplay="{{true}}"
+          interval="{{interval}}" circular="{{circular}}" duration="{{500}}">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+            <swiper-item>
+              <image src="{{item}}" class="slide-image" />
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+      <view class="cen">
+        <text class="l"></text>
+        <text class="c">新品到店</text>
+        <text class="r"></text>
+      </view>
+      <view class="bottom" >
+        <view class="right-roll">
+          <view class="ti" wx:for="{{categoryGoods}}" wx:key="index">
+            <navigator url="/pages/details/details?gid={{item.gid}}" hover-class="none" >
+              <image src="{{imghost + item.gthumb}}" alt=""></image>
+              <text>{{item.gname}}</text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,44 @@
+<view class="ul" wx:if="cart">
+  <view class="li"
+    wx:for="{{cart.goods}}" wx:key="{{index}}"
+  >
+    <view class="opt opt1"></view>
+    <view class="img-box">
+      <image src="{{imghost + item.gthumb}}"></image>
+    </view>
+    <view class="content">
+      <text class="ename nowrap">{{item.ename}}</text>
+      <text class="name nowrap">{{item.gname}}</text>
+      <text class="price">¥{{item.price}}</text>
+    </view>
+    <view class="num">
+      <view class="reduce"
+        bindtap="reducegoods" data-gid="{{item.gid}}" data-price="{{item.price}}" data-type="red"
+      >-</view>
+      <text>{{item.num}}</text>
+      <view class="add"
+        bindtap="plusgoods" data-gid="{{item.gid}}" data-price="{{item.price}}" data-type="add"
+      >+</view>
+    </view>
+  </view>
+</view>
+
+<view class="foot" wx:if="cart">
+  <view class="all">
+    <view class="select-all select-all1"></view>
+    <text>全选</text>
+  </view>
+  <view class="center">
+    <view class="cen">
+      <text>· 合计：</text>
+      <text class="price">¥{{cart.price}}</text>
+    </view>
+    <view class="cen1">
+      <text class="carriage">· 运费¥20</text>
+      <text>已优惠¥20</text>
+    </view>
+  </view>
+  <navigator url="/pages/fillorder/fillorder">
+    <button class="settle">结算</button>
+  </navigator>
+</view>

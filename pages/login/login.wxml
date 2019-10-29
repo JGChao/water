@@ -1,0 +1,33 @@
+<view class="mainColumn" style="background:url('../../images/20180812201957_kkyrv.jpg')center/cover;">
+  <view class="loginCard">
+    <view class="loginTitle">
+      <text>用户登录</text>
+    </view>
+    <form action="" class="loginForm">
+      <view class="loginForm-item">
+        <view class="inputWrap">
+          <input type="text" class="loginForm-input" value="{{form.username}}" bindinput="chagetype"
+          name="username" placeholder="请输入手机号"></input>
+        </view>
+
+      </view>
+      <view class="loginForm-item">
+        <view class="inputWrap">
+          <input type="password" class="loginForm-input" value="{{form.password}}" bindinput="chagetype"
+           name="password" placeholder="请输入密码"></input>
+        </view>
+      </view>
+      <view class="loginForm-item">
+        <button class="submitBtn" bindtap="successlogin">立即登录</button>
+      </view>
+    </form>
+    <view class="msbar">
+      <text>
+        <navigator>立即注册</navigator>
+      </text>
+      <text>
+        <navigator>忘记密码？</navigator>
+      </text>
+    </view>
+  </view>
+</view>

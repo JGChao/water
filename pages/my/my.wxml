@@ -1,0 +1,59 @@
+<!--pages/my/my.wxml-->
+<view class="box">
+    <view class="head" style="background:url('/images/bei.jpg')center/cover;">
+      <image class="ion" src="/images/shezi.png"></image>
+      <image class="ion1" src="/images/tz.png"></image>
+      <view class="portrait" bindtap="">
+        <image src="{{userdata.avatarUrl}}"></image>
+      </view>
+    </view>
+    <view class="name">{{userdata.nickName}}</view>
+    <view class="rank">LV.17</view>
+    <view class="fans">
+    <text>粉丝  1.5k</text>
+    <text>关注  36</text>
+    </view>
+    <view class="storp">
+      <view>
+      <view class="one">288</view>
+      <view>发布</view>
+      </view>
+      <view>
+      <view class="one">30</view>
+      <view>喜欢</view>
+      </view>
+      <view>
+      <view class="one">55</view>
+      <view>收藏</view>
+      </view>
+    </view>
+    <view class="nav">
+      <navigator url="/pages/cart/cart" class="nav1" hover-class="none" >
+        <image src="/images/m1.png"></image>
+        <view>购物车</view>
+      </navigator>
+      <navigator class="nav1">
+          <image src="/images/m2.png"></image>
+        <view>我的订单</view>
+      </navigator>
+      <navigator class="nav1">
+      <image src="/images/m3.png"></image>
+        <view>地址管理</view>
+      </navigator>
+    </view>
+    <view class="list">
+        <navigator class="list1">
+        <image class="list_img" src="/images/youh.png"></image>
+        <view class="txt">我的等级</view>
+        </navigator>
+        <navigator class="list1">
+        <image class="list_img" src="/images/as.png"></image>
+        <view class="txt">我的M币</view>
+        </navigator>
+        <navigator class="list1">
+        <image class="list_img" src="/images/asd.png"></image>
+        <view class="txt">我的优惠券</view>
+        </navigator>
+    </view>
+</view>
+<!-- <button wx:if="{{canIUse}}" bindgetuserinfo="getuserdata" open-type="getUserInfo">授权</button> -->

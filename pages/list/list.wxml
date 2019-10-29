@@ -1,0 +1,24 @@
+<!--pages/list/list.wxml-->
+  <view wx:if="{{list.length}}">
+      <view class="right-2-1" wx:for="{{list}}"  wx:key="index">
+      <navigator url="/pages/details/details?gid={{item.gid}}" hover-class="none">
+        <view class="right-left">
+          <image class="right-img" src="{{imghost + item.gthumb}}"></image>
+        </view>
+      </navigator>
+        <view class="right-right">
+          <view class="right-right-1 right-overflow">{{item.gname}}</view>
+          <view class="right-right-2 right-overflow">{{item.desc}}</view>
+          <view class="right-right-3">
+            <view class="v-1">好评
+              <view class="r-1">{{item.praise}}%</view>
+            </view>
+            <view class="v-1">月售
+              <view class="r-1">{{item.sales}}</view>
+            </view>
+            <view class="v-3">￥{{item.price}}</view>
+          </view>
+        </view>
+      </view>
+    
+  </view>

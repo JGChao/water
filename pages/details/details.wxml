@@ -1,0 +1,142 @@
+<!-- <view wx:if="goods.length"> -->
+  <view class="badder-box">
+    <view class="badder">
+      <navigator href="">
+        <swiper
+          indicator-dots="{{true}}" indicator-active-color="{{indicatoractivecolor}}" autoplay="{{true}}"
+          interval="{{interval}}" circular="{{circular}}" duration="{{500}}">
+          <block wx:for="{{goodsimg}}" wx:key="{{index}}">
+            <swiper-item>
+              <image src="{{imghost + item}}" class="" />
+            </swiper-item>
+          </block>
+        </swiper>
+      </navigator>
+    </view>
+  </view>
+  <!-- badder -->
+  <!-- 介绍 -->
+  <view class="jieShao-box">
+    <view class="jieShao">
+      <text style="display: block;font-weight:bold">{{goodsone.gname}}</text> 
+      <text style="color:#888888">{{goodsone.desc}}</text>
+      <view class="jieShao-under">
+        <text class="p1">{{goodsone.price}}元/件</text>
+        <view class="btn1">定金</view>
+        <view class="btn2">上门服务</view>
+        <view class="p2">
+          <text class="dian"></text>
+          <text class="span1">月售</text>
+          <text class="span2">{{goodsone.sales}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 介绍 -->
+  <!-- 领券 -->
+  <view class="quan-box">
+    <view class="quan">
+      <icon class="iconfont icon-youhuiquan"></icon>
+      <navigator href="">
+        <text>领券</text>
+      </navigator>
+      <view>满500减50</view>
+    </view>
+  </view>
+  <!-- 领券 -->
+  <!-- 备注 -->
+  <view class="beiZhu-box">
+    <view class="beiZhu">
+      <view class="beiZhu-item">
+        <text class="span1"></text>
+        <text class="span2">无额外收费</text>
+      </view>
+      <view class="beiZhu-item">
+        <text class="span1"></text>
+        <text class="span2">爽约包赔</text>
+      </view>
+      <view class="beiZhu-item">
+        <text class="span1"></text>
+        <text class="span2">不满意重新服务</text>
+      </view>
+    </view>
+  </view>
+  <!-- 备注 -->
+  <!-- 评论 -->
+  <view class="pingLun-box">
+    <view class="pingLun">
+      <view class="pingLun-on">
+        <view class="pingLun-on-left">
+          <text class="span1">- 用户</text>
+          <text class="span2">评价</text>
+        </view>
+        <view class="pingLun-on-right">
+          <navigator href="pingjia.html">
+            <text class="txt">查看全部</text>
+            <icon class="iconfont icon-qianwang i1"></icon>
+            <icon class="iconfont icon-qianwang i2"></icon>
+          </navigator>
+        </view>
+      </view>
+
+      <view class="pingLun-under-item1">
+        <navigator href="">
+          <image src="../../images/头像.png" alt="" class="img1"></image>
+        </navigator>
+        <text>2028-06-08</text>
+        <text class="pre1">用户名</text>
+        <view>
+          <icon class="iconfont icon-xingxing"></icon>
+          <icon class="iconfont icon-xingxing"></icon>
+          <icon class="iconfont icon-xingxing"></icon>
+          <icon class="iconfont icon-xingxing i4"></icon>
+          <icon class="iconfont icon-xingxing i4"></icon>
+        </view>
+        <text class="pre4">服务专业，商家细节做得特别好，准时到达</text>
+        <text class="pre5">北京  海淀区  四双跑步鞋清理</text>
+      </view>
+      <view class="pingLun-under-item1 item2">
+        <navigator href="">
+          <image src="../../images/头像.png" alt="" class="img1"></image>
+        </navigator>
+        <text>2028-06-08</text>
+        <text class="pre1">用户名</text>
+        <view>
+          <icon class="iconfont icon-xingxing"></icon>
+          <icon class="iconfont icon-xingxing"></icon>
+          <icon class="iconfont icon-xingxing"></icon>
+          <icon class="iconfont icon-xingxing i4"></icon>
+          <icon class="iconfont icon-xingxing i4"></icon>
+        </view>
+        <text class="pre4">服务专业，商家细节做得特别好，准时到达</text>
+        <text class="pre5">北京  海淀区  四双跑步鞋清理</text>
+        <image src="../../images/鞋.png" alt="" class="img2"></image>
+      </view>
+    </view>
+    </view>
+  <!-- tab -->
+  <view class="tab-box">
+    <view class="tab">
+      <navigator href="">
+        <view class="view1">
+          <image class="image" src="/images/d1.png"></image>
+          店铺
+        </view>
+      </navigator>
+      <navigator href="">
+        <view class="view2">
+          <image class="image" src="/images/d2.png"></image>
+          客服
+        </view>
+      </navigator>
+      
+        <view class="div3"
+           bindtap="addcart" data-gid="{{goodsone.gid}}" data-price="{{goodsone.price}}"
+        >加入购物车</view>
+      
+      
+        <view class="div4">立即下单</view>
+      
+    </view>
+  </view>
+<!-- </view> -->

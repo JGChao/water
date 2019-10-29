@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/category/category",
+    "pages/login/login",
+    "pages/cart/cart",
+    "pages/logs/logs",
+    "pages/my/my",
+    "pages/details/details"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f6fbff",
+    "navigationBarTitleText": "在水一方",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fff"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#C0E8FF",
+    "selectedColor": "#64C7FE",
+    "backgroundColor": "#f6fbff",
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home1.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "images/category.png",
+        "selectedIconPath": "images/category1.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/cart.png",
+        "selectedIconPath": "images/cart1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my1.png"
+      }
+    ]
+  }
+}

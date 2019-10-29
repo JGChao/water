@@ -1,0 +1,94 @@
+.mainColumn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffcb3f;
+    /*background: url();*/
+    
+}
+
+.loginCard{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500rpx;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40rpx 50rpx 40rpx;
+    border-radius: 20rpx
+}
+.loginCard .loginTitle{
+    text-align: center;
+    font-size: 36rpx;
+    color: #666;
+}
+.loginCard .loginForm .loginForm-item{
+    margin-top: 30rpx
+}
+.loginCard .loginForm .loginForm-item .inputWrap{
+    width: 500rpx;
+    height: 60rpx;
+    background-color: #fff;
+    border-radius: 30rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1rpx solid #1296db;
+
+}
+.loginCard .loginForm .loginForm-item .inputWrap input{
+    border: 0;
+    outline: 0;
+    height: 90%;
+    width: 80%;
+    font-size: 20rpx;
+    background-color: transparent;
+}
+.loginCard .loginForm .loginForm-item .submitBtn{
+    border: 0;
+    outline: 0;
+    height: 60rpx;
+    width: 300rpx;
+    font-size: 24rpx;
+    border-radius: 30rpx;
+    color: #fff;
+     background-color: #1296db;
+    font-weight: 700;
+}
+.loginCard .loginForm .validate .inputWrap .normal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.loginCard .loginForm .validate .inputWrap input{
+    width: 52%;
+    height: 90%;
+    font-size: 20rpx;
+    background-color: transparent;
+    padding-left: 26rpx;
+}
+.loginCard .loginForm .validate .inputWrap .getKey{
+    border: 0;
+    outline: 0;
+    height: 80%;
+    width: 34%;
+    font-size: 20rpx;
+    color: #c3c3c3;
+    margin-top: -3rpx;
+    background-color: transparent;
+}
+.loginCard .msbar{
+    margin-top: 40rpx;
+    font-size: 24rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.loginCard .msbar navigator{
+    color: #666
+}
